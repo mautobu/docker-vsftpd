@@ -11,7 +11,9 @@ sed -i "s/anonymous_enable=YES/anonymous_enable=NO/" /etc/vsftpd/vsftpd.custom.c
 cat <<EOF >> /etc/vsftpd/vsftpd.custom.conf
 ssl_enable=YES
 rsa_cert_file=/etc/vsftpd/vsftpd.pem
-ssl_tlsv1=YES
+ssl_tlsv1_2=YES
+ssl_tlsv1_1=YES
+ssl_tlsv1=NO
 ssl_sslv2=NO
 ssl_sslv3=NO
 ssl_ciphers=HIGH
