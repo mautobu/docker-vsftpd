@@ -1,10 +1,10 @@
-# rhrn/vsftpd
+# mautobu/vsftpd
 
 ### Examples
 
 * test server via command line
 ```
-docker run --rm -e PASSWORD=FSBhuNOR -p 21000:21 -p 20000:20000 rhrn/vsftpd:latest
+docker run --rm -e PASSWORD=FSBhuNOR -p 21000:21 -p 20000:20000 mautobu/vsftpd:latest
 ```
 
 * push file
@@ -23,7 +23,7 @@ volumes:
 services:
 
   ftp:
-    image: rhrn/vsftpd
+    image: mautobu/vsftpd
     environment:
       - PASSWORD=FSBhuNOR
     ports:
